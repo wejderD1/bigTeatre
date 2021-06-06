@@ -1,0 +1,69 @@
+// TYPOGAPHY
+@mixin typography($size, $weight, $lh, $ls:normal) {
+    font: {
+        weight: $weight;
+        style: normal;
+        size: $size;
+    }
+    line-height: $lh;
+    letter-spacing: $ls;
+} 
+
+//styleName: h1 / 72b;
+.h1-72b{
+    font-family: 'Open Sans Condensed-Bold';
+    @include typography(72px, 700, 98.05px, 10%);
+}
+
+//styleName: h1 / 64b;
+.h1-64b{
+    font-family: 'Open Sans Condensed-Bold';
+    @include typography(64px, 700, 87.16px, 10px);
+}
+
+//styleName: h2 / 48l;
+.h2-48l{
+    @include typography(48px, 300, 65px, 0.1em);
+}
+
+
+//styleName: h3 / 24b;
+.h3-24b{
+    font-family: 'Open Sans Condensed-Bold';
+    @include typography(24px, 700, 32.68px, 5%);
+}
+
+//styleName: p / 36b;
+.p-36b{
+    font-family: 'Open Sans Condensed-Bold';
+    @include typography(36px, 700, 54px)
+}
+
+//styleName: p / 21b;
+.p-21b{
+    font-family: 'Open Sans Condensed-Bold';
+    @include typography(21px, 700, 29px, 0.1em);
+    text-transform: uppercase;
+}
+
+//styleName: p / 18b;
+.p-18b{
+    font-family: 'Open Sans Condensed-Bold';
+    @include typography(18px, 700, 24.51px, 10%);
+}
+
+//styleName: p / 16l
+.p-16l{
+    @include typography(16px, 400, 24px);
+}
+
+//styleName: p / 16b;
+.p-16b{
+    font-family: 'Open Sans Condensed-Bold';
+    @include typography(16px, 700, 21.79px, 5%);
+}
+
+//styleName: p / 14l;
+.p-14l{
+    @include typography(14px, 400, 150%);
+}

@@ -1,0 +1,115 @@
+#scales {
+  display: none;
+}
+
+.burger-container {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 66px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+.burger-inner {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.burger-item .menu-item {
+  margin: auto;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-bottom: transparent 2px solid;
+  transition: all 0.2s linear;
+  transform: scale(0.2);
+  font-size: 0;
+}
+.burger-item .menu-item:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #d1a954;
+}
+.burger-item {
+  margin-bottom: 6px;
+  height: 3px;
+}
+.burger-item::before {
+  display: inline-block;
+  content: "";
+  background-color: #ffffff;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+}
+.burger-item:nth-child(2)::before {
+  width: 25px;
+}
+.burger-item:nth-child(3)::before {
+  width: 20px;
+}
+.burger-item:nth-child(n+4)::before {
+  width: 0;
+}
+
+#scales:checked ~ .burger-inner {
+  padding: 100px 40px;
+  width: 300px;
+}
+#scales:checked ~ .burger-inner .menu-item {
+  font-size: 18px;
+  opacity: 1;
+}
+#scales:checked ~ .burger-inner .burger-item {
+  transform: scale(1);
+  border: none;
+  opacity: 1;
+  background: transparent;
+  margin-bottom: 60px;
+}
+#scales:checked ~ .burger-inner .burger-item::before {
+  opacity: 0;
+  transform: scale(0);
+  width: 0;
+}
+#scales:checked ~ .controller {
+  transform: rotate(45deg) scale(1);
+}
+#scales:checked ~ .controller:after {
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+#scales:checked ~ .controller::before {
+  border-right: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  transform: translate3d(1px, 9px, 0);
+}
+
+.controller:after,
+.controller:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.controller:hover::after,
+.controller:hover::before {
+  border-color: #d1a954;
+  cursor: pointer;
+}
+
+.controller {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 100%;
+  z-index: 44;
+  transition: all 0.2s linear;
+}

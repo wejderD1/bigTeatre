@@ -1,0 +1,136 @@
+/* Large desktops and laptops */
+@media (min-width: 1241px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1240px){
+    .container {
+        max-width: 730px;
+    }
+
+    .menu{
+        width: 80%;
+    }
+}
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    .container {
+        max-width: 600px;
+        &-100{
+            max-width: 100%;
+        }
+    }
+
+    .menu {
+        &-inner{
+            justify-content: center;
+        }
+        &-phone{
+            font-size: 16px;
+        }
+    }
+
+    .carousel-container{
+        display: none;
+    }
+
+    .about-img-container {
+        display: none;
+    }
+
+    .fixed-panel{
+        padding: 50px 40px;
+    }
+
+    .test-inner{
+        padding-left: 0;
+    }
+    
+    .new-contacts-container{
+        margin-top: 40px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .burger-container{
+        display: inline-block;
+    }
+
+    .menu, .fixed-panel{
+        display: none;
+    }
+
+    .menu-phone{
+        margin-top: 50px;
+        margin-left: auto;
+    }
+
+    .test-inner{
+        background-size: cover;
+    }
+
+    .test-items p{
+        font-size: 29px;
+        margin-left: 25px;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 576px) {
+    .container{
+        max-width: 510px;
+    }
+
+    .title{
+        margin: 30px 0;
+    }
+
+    .about-inner{
+        flex-direction: row;
+        flex-wrap: wrap;
+        & > div{
+            text-align: center;
+        }
+    }
+
+    .test-items{
+        & p{
+            font-size: 25px;
+        }
+        & h1{
+            font-size: 64px;
+        }
+    } 
+
+    .partners-logo{
+        width: 30%;
+    }
+
+    .send-block{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        & > p{
+            order: 2;
+        }
+    }
+    .btn-meacenas{
+        margin: 0;
+        margin-bottom: 25px;
+        order: 1;
+    }
+    
+
+}
+
+// По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:
+
+@media (max-width: 650) {
+}

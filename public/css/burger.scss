@@ -1,0 +1,144 @@
+//COLOR CONSTANTS
+$gold: #d1a954;
+$dark: #000000;
+$white: #ffffff;
+$grey: #989898;
+$soft-dark: #333333;
+
+
+$burger-transition: all 0.2s linear;
+
+// BURGER
+#scales {
+    display: none;
+}
+
+.burger {
+    &-container {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 66px;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        z-index: 2;
+        overflow: hidden;
+        transition: $burger-transition;
+
+    }
+    &-inner {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    &-item .menu-item{
+        margin: auto;
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+        border-bottom: transparent 2px solid;
+        transition: $burger-transition;
+        transform: scale(0.2);
+        font-size: 0;
+        &:hover {
+            cursor: pointer;
+            border-bottom: 2px solid $gold;
+        }
+    }
+    &-item {
+        margin-bottom: 6px;
+        height: 3px;
+    }
+
+    &-item::before{
+        display: inline-block;
+        content: '';
+        background-color: $white;
+        width: 30px;
+        height: 3px;
+        border-radius: 5px;
+
+        // transition: $burger-transition;
+        // transition-delay: 250ms;
+        // transition-timing-function: step-end;
+        // transition-delay: 0s;
+    }
+    &-item:nth-child(2)::before{
+        width: 25px;
+    }
+    &-item:nth-child(3)::before{
+        width: 20px;
+    }
+    &-item:nth-child(n+4)::before{
+        width: 0;
+    }
+}
+
+
+
+#scales:checked {
+    & ~.burger-inner{
+        padding: 100px 40px;
+        width: 300px;
+    }
+    & ~ .burger-inner .menu-item{
+        font-size: 18px;
+        opacity: 1;
+    }
+    & ~ .burger-inner .burger-item{
+        transform: scale(1);
+        border: none;
+        opacity: 1;
+        background: transparent;
+        margin-bottom: 60px;
+        &::before{
+            opacity: 0;
+            transform: scale(0);
+            width: 0;
+        }
+    }
+    & ~ .controller{
+        transform: rotate(45deg) scale(1);
+        &:after {
+            border-left: 1px solid $white;
+            border-bottom: 1px solid $white;
+        }
+        &::before {
+            border-right: 1px solid $white;
+            border-top: 1px solid $white;
+            transform: translate3d(1px, 9px, 0);
+        }
+    }
+}
+
+.controller:after,
+.controller:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+.controller:hover::after,
+.controller:hover::before {
+    border-color: $gold;
+    cursor: pointer;
+}
+
+.controller {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 100%;
+    z-index: 44;
+
+    transition: $burger-transition;
+
+}
+
+
+// border: 1px solid white;

@@ -1,0 +1,87 @@
+.h1-72b {
+  font-family: "Open Sans Condensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 98.05px;
+  letter-spacing: 10%;
+}
+
+.h1-64b {
+  font-family: "Open Sans Condensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 87.16px;
+  letter-spacing: 10px;
+}
+
+.h2-48l {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.1em;
+}
+
+.h3-24b {
+  font-family: "Open Sans Condensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32.68px;
+  letter-spacing: 5%;
+}
+
+.p-36b {
+  font-family: "Open Sans Condensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: normal;
+}
+
+.p-21b {
+  font-family: "Open Sans Condensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.p-18b {
+  font-family: "Open Sans Condensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24.51px;
+  letter-spacing: 10%;
+}
+
+.p-16l {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+
+.p-16b {
+  font-family: "Open Sans Condensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21.79px;
+  letter-spacing: 5%;
+}
+
+.p-14l {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: normal;
+}
