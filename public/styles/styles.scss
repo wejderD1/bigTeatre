@@ -1,4 +1,4 @@
-// @import "~normalize.css";
+// @import "~normalize.scss";
 // @import url("~bootstrap-icons.css");
 @import "./text-styles.scss";
 @import "./burger.scss";
@@ -303,7 +303,7 @@ body {
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         display: inline-block;
-        background-image: url("/img/search.png");
+        background-image: url("../img/search.png");
         background-repeat: no-repeat;
 
         width: 100px;
@@ -336,7 +336,7 @@ body {
 .test-inner {
     position: relative;
     background: {
-        image: url("/img/rec.jpg");
+        image: url("../img/rec.jpg");
         size: 100% 100%;
         repeat: no-repeat;
     }

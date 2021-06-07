@@ -1,4 +1,7 @@
-window.addEventListener('DOMContentLoaded', function () {
+import Slider from "./js/slider";
+import './styles/styles.css';
+
+// window.addEventListener('DOMContentLoaded', function () {
 
     const options = {
         main: ".slider-list",
@@ -142,5 +145,4 @@ window.addEventListener('DOMContentLoaded', function () {
         controllerClick();
         checkBox.checked = false;
     }));
-
-})
+// })

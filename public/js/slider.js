@@ -1,4 +1,4 @@
-class Slider {
+export default class Slider {
     constructor({
         main,
         field,
