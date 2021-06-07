@@ -1,6 +1,5 @@
 import Slider from "./js/slider";
 import './styles/styles.css';
-
 // window.addEventListener('DOMContentLoaded', function () {
 
     const options = {
